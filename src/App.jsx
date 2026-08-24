@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import profileImage from './assets/profile.jpg'
+import profileImage from './assets/profile.JPG'
 import './App.css'
 
 const navigation = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
