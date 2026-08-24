@@ -180,6 +180,88 @@
   column-gap: 2.5rem;
 }
 
+.projects-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(15rem, 0.75fr);
+  align-items: start;
+  gap: clamp(1.5rem, 5vw, 5rem);
+  width: min(100%, 70rem);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.projects-content > .project-categories:first-child { order: 2; }
+.projects-content > .project-categories:last-child { order: 1; }
+
+.project-details {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.16);
+}
+
+.section-label {
+  margin: 0 0 0.5rem;
+  color: var(--secondary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-details h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  line-height: 1.1;
+}
+
+.project-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.project-item {
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--background);
+}
+
+.project-item h3 {
+  margin: 0 0 0.45rem;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.project-item p {
+  color: var(--muted-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.project-categories {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-category-card {
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12);
+  animation: reveal-project-card 3s var(--card-delay) cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.project-category-card p {
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
 .swipe-from-right { animation: swipe-from-right 320ms ease-out both; }
 .swipe-from-left { animation: swipe-from-left 320ms ease-out both; }
 
@@ -215,6 +297,11 @@
     max-width: 30rem;
   }
 
+  .projects-content {
+    grid-template-columns: 1fr;
+    max-width: 30rem;
+  }
+
   .hard-skills-list {
     grid-template-columns: 1fr;
     grid-template-rows: none;
@@ -233,10 +320,16 @@
   to { opacity: 1; transform: translateX(0); }
 }
 
+@keyframes reveal-project-card {
+  from { opacity: 0; transform: translateX(2rem); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .site-navigation button::after { transition: none; }
   .swipe-from-right,
   .swipe-from-left,
   .skills-group-hard,
-  .skills-group-soft { animation: none; }
+  .skills-group-soft,
+  .project-category-card { animation: none; }
 }
