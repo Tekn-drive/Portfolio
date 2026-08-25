@@ -1,100 +1,75 @@
 import '../App.css';
 
-export default function ProjectsSection() {
+export default function ProjectsSection({ content }) {
     return (
         <div className="projects-content">
-            <section className="project-categories" aria-label="Project categories">
+            <section className="project-categories" aria-label={content.categories}>
                 <article className="project-category-card project-details project-card-top project-card-right project-card-data" style={{ '--card-delay': '1400ms' }}>
-                    <h2>Data Mining</h2>
+                    <h2>{content.dataMining}</h2>
                     <div className="project-list">
                         <a href="https://github.com/Tekn-drive/ClassificationRegression">
                             <article className="project-item">
-                                <h3>Classification and Regression</h3>
-                                <p>
-                                    Performed both classification and regression modeling tasks to
-                                    process water potability datasets, performing data extraction,
-                                    transformation, and loading into SQL databases.
-                                </p>
+                                <h3>{content.classification}</h3>
+                                <p>{content.classificationDescription}</p>
                             </article>
                         </a>
                     </div>
                 </article>
 
                 <article className="project-category-card project-details project-card-bottom project-card-right project-card-oop" style={{ '--card-delay': '2100ms' }}>
-                    <h2>Object Oriented Programming</h2>
+                    <h2>{content.oop}</h2>
                     <div className="project-list">
                         <a href="https://github.com/Tekn-drive/Le-Hotelier">
                             <article className="project-item">
-                                <h3>Le Hotelier</h3>
-                                <p>
-                                    A Java-based hotel management software for handling hotel operations.
-                                </p>
+                                <h3>{content.hotelier}</h3>
+                                <p>{content.hotelierDescription}</p>
                             </article>
                         </a>
                     </div>
                 </article>
             </section>
 
-            <section className="project-categories" aria-label="Featured projects">
+            <section className="project-categories" aria-label={content.featured}>
                 <article className="project-category-card project-details project-card-top project-card-left project-card-nlp" style={{ '--card-delay': '0ms' }}>
-                    <h2 id="nlp-title">Natural Language Processing</h2>
+                    <h2 id="nlp-title">{content.nlp}</h2>
                     <div className="project-list">
                         <a href="https://github.com/Tekn-drive/Sentiment-Analysis">
                             <article className="project-item">
-                                <h3>Sentiment Analysis</h3>
-                                <p>
-                                    A simple React.js-based web app that is able to do sentiment analysis on a given text.
-                                </p>
+                                <h3>{content.sentiment}</h3>
+                                <p>{content.sentimentDescription}</p>
                             </article>
                         </a>
                         
                         <a href="https://github.com/Tekn-drive/Fraud-Detector">
                             <article className="project-item">
-                                <h3>Fraud Detector</h3>
-                                <p>
-                                    A Python desktop application with ETL workflows and natural
-                                    language processing to identify fraudulent e-commerce reviews,
-                                    improving detection accuracy.
-                                </p>
+                                <h3>{content.fraud}</h3>
+                                <p>{content.fraudDescription}</p>
                             </article>
                         </a>
                     </div>
                 </article>
 
                 <article className="project-category-card project-details project-card-bottom project-card-left project-card-cv" style={{ '--card-delay': '700ms' }}>
-                    <h2>Computer Vision</h2>
+                    <h2>{content.cv}</h2>
                     <div className="project-list">
                         <a href="https://github.com/Tekn-drive/MSDD">
                             <article className="project-item">
-                                <h3>MSDD</h3>
-                                <p>
-                                    Object detection dataset consisting of 300 shelf images in
-                                    Indonesian minimarkets containing nearly 14,000 product
-                                    instances with more than 100 unique SKUs, each with their own
-                                    class labels.
-                                </p>
+                                <h3>{content.msdd}</h3>
+                                <p>{content.msddDescription}</p>
                             </article>
                         </a>
 
                         <a href="https://github.com/Tekn-drive/Realtime-Emotion-Recognition">
                             <article className="project-item">
-                                <h3>Real-time Emotion Recognition</h3>
-                                <p>
-                                    Real-time emotion recognition pipeline using Python, OpenCV,
-                                    and trained datasets, enabling webcam-based data ingestion,
-                                    processing, and classification with high data quality.
-                                </p>
+                                <h3>{content.realtime}</h3>
+                                <p>{content.realtimeDescription}</p>
                             </article>
                         </a>
                         
                         <a href="https://www.mediafire.com/file/md8cytkn464yb5g/ML_LA02_1_Comparison_Analysis_of_Emotion_Recognition_Models.zip/file">
                             <article className="project-item">
-                                <h3>Emotion Recognition</h3>
-                                <p>
-                                    Image-based emotion classification models developed by applying
-                                    data preprocessing, feature extraction, and supervised learning
-                                    techniques for accurate predictions. This is a comparative study of different machine learning algorithms for emotion recognition.
-                                </p>
+                                <h3>{content.emotion}</h3>
+                                <p>{content.emotionDescription}</p>
                             </article>
                         </a>
                     </div>

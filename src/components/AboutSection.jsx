@@ -1,25 +1,20 @@
 import profileImage from '../assets/profile.JPG';
 import '../App.css'
 
-export default function AboutSection() {
+export default function AboutSection({ content }) {
     return (
         <div className="about-content">
             <div className="profile-frame">
-                <img src={profileImage} alt="Juan Arnold" />
+                <img src={profileImage} alt={content.imageAlt} />
             </div>
             
             <div className="about-copy">
-                <h1>Juan Arnold</h1>
+                <h1>{content.name}</h1>
                 <p className="about-subtitle">
-                    Software Engineer | Machine Learning and Data Science Enthusiast
+                    {content.subtitle}
                 </p>
 
-                <p>
-                    Hi, I am Juan Arnold I am currently a Freelance Software Engineer at
-                    PWD Lab, I build apps with the focus on web development, data and AI.
-                    I aspire to be a data scientist or machine learning engineer in the
-                    future.
-                </p>
+                <p>{content.description}</p>
             </div>
         </div>
     );

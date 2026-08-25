@@ -1,29 +1,19 @@
 import '../App.css'
 
-export default function SkillsSection() {
+export default function SkillsSection({ content }) {
     return (
         <div className="skills-content">
             <section className="skills-group skills-group-hard" aria-labelledby="hard-skills-title">
-                <h2 id="hard-skills-title">Hard Skills</h2>
+                <h2 id="hard-skills-title">{content.hardTitle}</h2>
                 <ul className="hard-skills-list">
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Next.js</li>
-                    <li>Databases</li>
-                    <li>AI and Machine Learning</li>
+                    {content.hard.map((skill) => <li key={skill}>{skill}</li>)}
                 </ul>
             </section>
             
             <section className="skills-group skills-group-soft" aria-labelledby="soft-skills-title">
-                <h2 id="soft-skills-title">Soft Skills</h2>
+                                <h2 id="soft-skills-title">{content.softTitle}</h2>
                 <ul>
-                  <li>Leadership</li>
-                  <li>Team Communication</li>
-                  <li>Growth Mindset</li>
-                  <li>Requirements Analysis</li>
+                                    {content.soft.map((skill) => <li key={skill}>{skill}</li>)}
                 </ul>
             </section>
         </div>

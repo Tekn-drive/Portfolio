@@ -1,10 +1,10 @@
 import '../App.css';
 
-export default function ContactSection() {
+export default function ContactSection({ content }) {
 	return (
 		<div className="contact-content">
 			<a className="contact-button contact-button-mail" href="mailto:juan.arnold.cs@gmail.com">
-				Mail
+				{content.mail}
 			</a>
 			<a
 				className="contact-button contact-button-whatsapp"
@@ -12,7 +12,7 @@ export default function ContactSection() {
 				target="_blank"
 				rel="noreferrer"
 			>
-				WhatsApp
+				{content.whatsapp}
 			</a>
 		</div>
 	);
