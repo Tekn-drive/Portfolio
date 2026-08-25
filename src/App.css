@@ -230,6 +230,10 @@
   background: var(--background);
 }
 
+.project-item:hover {
+  background: #8b5cf6;
+}
+
 .project-item h3 {
   margin: 0 0 0.45rem;
   color: var(--text);
