@@ -81,6 +81,7 @@
   max-width: 64rem;
   margin: 0 auto;
   text-align: left;
+  animation: reveal-about 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .profile-frame {
@@ -297,19 +298,6 @@
   line-height: 1.35;
 }
 
-.swipe-from-right { animation: swipe-from-right 320ms ease-out both; }
-.swipe-from-left { animation: swipe-from-left 320ms ease-out both; }
-
-@keyframes swipe-from-right {
-  from { opacity: 0; transform: translateX(2rem); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes swipe-from-left {
-  from { opacity: 0; transform: translateX(-2rem); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
 @media (max-width: 32rem) {
   .site-navigation {
     gap: 0.75rem;
@@ -376,10 +364,14 @@
   to { opacity: 1; transform: translateX(0); }
 }
 
+@keyframes reveal-about {
+  from { opacity: 0; transform: translateY(2rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .site-navigation button::after { transition: none; }
-  .swipe-from-right,
-  .swipe-from-left,
+  .about-content,
   .skills-group-hard,
   .skills-group-soft,
   .project-category-card { animation: none; }

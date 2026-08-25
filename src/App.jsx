@@ -8,12 +8,10 @@ const navigation = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(0)
-  const [direction, setDirection] = useState('right')
 
   const selectPage = (index) => {
     if (index === activeIndex) return
 
-    setDirection(index > activeIndex ? 'right' : 'left')
     setActiveIndex(index)
   }
 
@@ -40,7 +38,7 @@ function App() {
       <main className="content-viewport">
         <section
           key={activePage}
-          className={`content-panel swipe-from-${direction}`}
+          className="content-panel"
           aria-label={activePage}
         >
           {activePage === 'About' ? (
