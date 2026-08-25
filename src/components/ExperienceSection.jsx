@@ -6,7 +6,7 @@ const experiences = [
 		company: 'PWD Lab',
 		dates: 'Jul 2026 - Now',
 		responsibilities: [
-			'Creating various applications with frameworks such as Next.js, React, and also utilizing Databases such as Supabase and AI',
+			'Creating various applications with frameworks such as Next.js, React, and also utilizing databases such as Supabase and other technologies such as AI',
 		],
 	},
 	{

@@ -356,6 +356,53 @@
 
 .experience-card li::marker { color: var(--primary); }
 
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: min(100%, 30rem);
+  margin: 0 auto;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10.5rem;
+  padding: 1.05rem 1.875rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.contact-button-mail {
+  animation: reveal-contact-mail 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.contact-button-whatsapp {
+  animation: reveal-contact-whatsapp 700ms 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.contact-button:hover,
+.contact-button:focus-visible {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+.contact-button:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 0.2rem;
+}
+
+.contact-button-mail { background: var(--primary); }
+.contact-button-whatsapp { background: #25d366; }
+
 .project-category-card p {
   color: var(--text);
   font-weight: 600;
@@ -400,6 +447,10 @@
     max-width: 30rem;
   }
 
+  .contact-content {
+    align-items: center;
+  }
+
   .experience-card:nth-child(4) {
     grid-column: auto;
   }
@@ -442,6 +493,16 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes reveal-contact-mail {
+  from { opacity: 0; transform: translateY(-2rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes reveal-contact-whatsapp {
+  from { opacity: 0; transform: translateY(2rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @keyframes reveal-experience-card {
   from { opacity: 0; transform: translateY(2rem); }
   to { opacity: 1; transform: translateY(0); }
@@ -453,5 +514,7 @@
   .skills-group-hard,
   .skills-group-soft,
   .project-category-card,
-  .experience-card { animation: none; }
+  .experience-card,
+  .contact-button-mail,
+  .contact-button-whatsapp { animation: none; }
 }

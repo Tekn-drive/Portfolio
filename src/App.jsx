@@ -4,6 +4,7 @@ import AboutSection from './components/AboutSection'
 import SkillsSection from './components/SkillsSection'
 import ProjectsSection from './components/ProjectsSection'
 import ExperienceSection from './components/ExperienceSection'
+import ContactSection from './components/ContactSection'
 
 const navigation = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
@@ -50,6 +51,8 @@ function App() {
             <ProjectsSection />
           ) : activePage === 'Experience' ? (
             <ExperienceSection />
+          ) : activePage === 'Contact' ? (
+            <ContactSection />
           ) : (
             <p>{`{this is ${activePage}}`}</p>
           )}
