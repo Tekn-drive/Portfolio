@@ -284,13 +284,77 @@
 .project-card-oop { order: 4; }
 .project-card-top {
   position: relative;
-  top: -4rem;
+  top: -3rem;
 }
 
 .project-card-bottom {
   position: relative;
   top: -2rem;
 }
+
+.experience-content {
+  position: relative;
+  top: -3rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  width: min(100%, 70rem);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.experience-card {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12);
+  animation: reveal-experience-card 700ms var(--card-delay) cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.experience-card:nth-child(4) {
+  grid-column: 2;
+}
+
+.experience-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.experience-card h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.experience-company,
+.experience-card time {
+  color: var(--secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.experience-card time {
+  display: block;
+  color: var(--muted-text);
+  font-weight: 500;
+}
+
+.experience-card ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted-text);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.experience-card li::marker { color: var(--primary); }
 
 .project-category-card p {
   color: var(--text);
@@ -331,6 +395,15 @@
     height: 34rem;
   }
 
+  .experience-content {
+    grid-template-columns: 1fr;
+    max-width: 30rem;
+  }
+
+  .experience-card:nth-child(4) {
+    grid-column: auto;
+  }
+
   .project-card-top,
   .project-card-bottom {
     top: 0;
@@ -369,10 +442,16 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes reveal-experience-card {
+  from { opacity: 0; transform: translateY(2rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .site-navigation button::after { transition: none; }
   .about-content,
   .skills-group-hard,
   .skills-group-soft,
-  .project-category-card { animation: none; }
+  .project-category-card,
+  .experience-card { animation: none; }
 }
