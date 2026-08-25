@@ -61,7 +61,7 @@ const translations = {
   zh: {
     navigation: ['关于', '技能', '项目', '经历', '联系'],
     primaryNavigation: '主要导航',
-    about: { imageAlt: '郑福盛', name: '郑福盛', subtitle: '软件工程师 | 机器学习与数据科学爱好者', description: '你好，我是 郑福盛。目前我在 PWD Lab 担任自由软件工程师，专注于开发网页、数据和人工智能应用。未来我希望成为数据科学家或机器学习工程师。' },
+    about: { imageAlt: '郑福盛', name: '郑福盛', subtitle: '软件工程师 | 机器学习与数据科学爱好者', description: '你好，我是郑福盛。目前我在 PWD Lab 担任自由软件工程师，专注于开发网页、数据和人工智能应用。未来我希望成为数据科学家或机器学习工程师。' },
     skills: { hardTitle: '专业技能', softTitle: '软技能', hard: ['Python', 'HTML', 'CSS', 'JavaScript', 'React', 'Next.js', '数据库', '人工智能与机器学习'], soft: ['领导力', '团队沟通', '成长型思维', '需求分析'] },
     projects: { categories: '项目类别', featured: '精选项目', dataMining: '数据挖掘', oop: '面向对象编程', nlp: '自然语言处理', cv: '计算机视觉', classification: '分类与回归', classificationDescription: '完成分类和回归建模任务以处理水质数据集，并将数据提取、转换和加载到 SQL 数据库中。', hotelier: 'Le Hotelier', hotelierDescription: '用于处理酒店运营的 Java 酒店管理软件。', sentiment: '情感分析', sentimentDescription: '一个基于 React.js 的简单网页应用，可对给定文本进行情感分析。', fraud: '欺诈检测器', fraudDescription: '使用 ETL 流程和自然语言处理识别虚假电商评论的 Python 桌面应用。', msdd: 'MSDD', msddDescription: '一个物体检测数据集，包含印度尼西亚迷你市场的 300 张货架图片、近 14,000 个产品实例和超过 100 个带类别标签的 SKU。', realtime: '实时情绪识别', realtimeDescription: '使用 Python、OpenCV 和训练数据集的实时情绪识别流程，可进行摄像头数据采集、处理和分类。', emotion: '情绪识别', emotionDescription: '通过数据预处理、特征提取和监督学习技术开发的基于图像的情绪分类模型。' },
     experience: [
