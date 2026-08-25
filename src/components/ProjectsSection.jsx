@@ -1,5 +1,4 @@
 import '../App.css';
-import { Link } from 'react-router-dom';
 
 export default function ProjectsSection() {
     return (
@@ -8,7 +7,7 @@ export default function ProjectsSection() {
                 <article className="project-category-card project-details" style={{ '--card-delay': '320ms' }}>
                     <h2>Data Mining</h2>
                     <div className="project-list">
-                        <Link to = "https://github.com/Tekn-drive/ClassificationRegression">
+                        <a href="https://github.com/Tekn-drive/ClassificationRegression">
                             <article className="project-item">
                                 <h3>Classification and Regression</h3>
                                 <p>
@@ -17,21 +16,21 @@ export default function ProjectsSection() {
                                     transformation, and loading into SQL databases.
                                 </p>
                             </article>
-                        </Link>
+                        </a>
                     </div>
                 </article>
 
                 <article className="project-category-card project-details" style={{ '--card-delay': '670ms' }}>
                     <h2>Object Oriented Programming</h2>
                     <div className="project-list">
-                        <Link to = "https://github.com/Tekn-drive/Le-Hotelier">
+                        <a href="https://github.com/Tekn-drive/Le-Hotelier">
                             <article className="project-item">
                                 <h3>Le Hotelier</h3>
                                 <p>
                                     A Java-based hotel management software for handling hotel operations.
                                 </p>
                             </article>
-                        </Link>
+                        </a>
                     </div>
                 </article>
             </section>
@@ -40,16 +39,16 @@ export default function ProjectsSection() {
                 <article className="project-category-card project-details" style={{ '--card-delay': '1020ms' }}>
                     <h2 id="nlp-title">Natural Language Processing</h2>
                     <div className="project-list">
-                        <Link to = "https://github.com/Tekn-drive/Sentiment-Analysis">
+                        <a href="https://github.com/Tekn-drive/Sentiment-Analysis">
                             <article className="project-item">
                                 <h3>Sentiment Analysis</h3>
                                 <p>
                                     A simple React.js-based web app that is able to do sentiment analysis on a given text.
                                 </p>
                             </article>
-                        </Link>
+                        </a>
                         
-                        <Link to = "https://github.com/Tekn-drive/Fraud-Detector">
+                        <a href="https://github.com/Tekn-drive/Fraud-Detector">
                             <article className="project-item">
                                 <h3>Fraud Detector</h3>
                                 <p>
@@ -58,14 +57,14 @@ export default function ProjectsSection() {
                                     improving detection accuracy.
                                 </p>
                             </article>
-                        </Link>
+                        </a>
                     </div>
                 </article>
 
                 <article className="project-category-card project-details" style={{ '--card-delay': '1370ms' }}>
                     <h2>Computer Vision</h2>
                     <div className="project-list">
-                        <Link to = "https://github.com/Tekn-drive/MSDD">
+                        <a href="https://github.com/Tekn-drive/MSDD">
                             <article className="project-item">
                                 <h3>MSDD</h3>
                                 <p>
@@ -75,9 +74,9 @@ export default function ProjectsSection() {
                                     class labels.
                                 </p>
                             </article>
-                        </Link>
+                        </a>
 
-                        <Link to = "https://github.com/Tekn-drive/Realtime-Emotion-Recognition">
+                        <a href="https://github.com/Tekn-drive/Realtime-Emotion-Recognition">
                             <article className="project-item">
                                 <h3>Real-time Emotion Recognition</h3>
                                 <p>
@@ -86,9 +85,9 @@ export default function ProjectsSection() {
                                     processing, and classification with high data quality.
                                 </p>
                             </article>
-                        </Link>
+                        </a>
                         
-                        <Link to = "https://www.mediafire.com/file/md8cytkn464yb5g/ML_LA02_1_Comparison_Analysis_of_Emotion_Recognition_Models.zip/file">
+                        <a href="https://www.mediafire.com/file/md8cytkn464yb5g/ML_LA02_1_Comparison_Analysis_of_Emotion_Recognition_Models.zip/file">
                             <article className="project-item">
                                 <h3>Emotion Recognition</h3>
                                 <p>
@@ -97,7 +96,7 @@ export default function ProjectsSection() {
                                     techniques for accurate predictions. This is a comparative study of different machine learning algorithms for emotion recognition.
                                 </p>
                             </article>
-                        </Link>
+                        </a>
                     </div>
                 </article>
             </section>
