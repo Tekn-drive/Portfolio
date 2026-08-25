@@ -4,7 +4,7 @@ export default function ProjectsSection() {
     return (
         <div className="projects-content">
             <section className="project-categories" aria-label="Project categories">
-                <article className="project-category-card project-details project-card-right project-card-data" style={{ '--card-delay': '1400ms' }}>
+                <article className="project-category-card project-details project-card-top project-card-right project-card-data" style={{ '--card-delay': '1400ms' }}>
                     <h2>Data Mining</h2>
                     <div className="project-list">
                         <a href="https://github.com/Tekn-drive/ClassificationRegression">
@@ -20,7 +20,7 @@ export default function ProjectsSection() {
                     </div>
                 </article>
 
-                <article className="project-category-card project-details project-card-right project-card-oop" style={{ '--card-delay': '2100ms' }}>
+                <article className="project-category-card project-details project-card-bottom project-card-right project-card-oop" style={{ '--card-delay': '2100ms' }}>
                     <h2>Object Oriented Programming</h2>
                     <div className="project-list">
                         <a href="https://github.com/Tekn-drive/Le-Hotelier">
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
             </section>
 
             <section className="project-categories" aria-label="Featured projects">
-                <article className="project-category-card project-details project-card-left project-card-nlp" style={{ '--card-delay': '0ms' }}>
+                <article className="project-category-card project-details project-card-top project-card-left project-card-nlp" style={{ '--card-delay': '0ms' }}>
                     <h2 id="nlp-title">Natural Language Processing</h2>
                     <div className="project-list">
                         <a href="https://github.com/Tekn-drive/Sentiment-Analysis">
@@ -61,7 +61,7 @@ export default function ProjectsSection() {
                     </div>
                 </article>
 
-                <article className="project-category-card project-details project-card-left project-card-cv" style={{ '--card-delay': '700ms' }}>
+                <article className="project-category-card project-details project-card-bottom project-card-left project-card-cv" style={{ '--card-delay': '700ms' }}>
                     <h2>Computer Vision</h2>
                     <div className="project-list">
                         <a href="https://github.com/Tekn-drive/MSDD">
