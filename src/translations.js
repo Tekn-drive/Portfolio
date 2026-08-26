@@ -42,7 +42,7 @@ const translations = {
       { role: 'Freelance Data Annotator', company: 'DataAnnotation', dates: 'Jul 2025 - Nov 2025', responsibilities: ['Labelled data for machine learning pipelines'] },
       { role: 'Full Stack Developer Intern', company: 'Komune Studio Software House', dates: 'Sep 2024 - Jan 2025', responsibilities: ['Designed and optimized data pipelines for real-time face detection and facial recognition applications', 'Enhanced an existing model with continuous training capability and dynamic class addition/removal', 'Built a Python-based backend for on-demand facial matching via user input or webcam feed, ensuring high data quality and performance optimization', 'Applied SQL and NoSQL database management to store and retrieve processed facial data'] },
     ],
-    contact: { languageLabel: 'Language selection', mail: 'Email', whatsapp: 'WhatsApp' },
+    contact: { languageLabel: 'Language selection', mail: 'Email', whatsapp: 'WhatsApp', github: 'GitHub' },
   },
   id: {
     navigation: ['Tentang', 'Keahlian', 'Proyek', 'Pengalaman', 'Kontak'],
@@ -56,21 +56,21 @@ const translations = {
       { role: 'Freelance Anotator Data', company: 'DataAnnotation', dates: 'Jul 2025 - Nov 2025', responsibilities: ['Memberi label pada data untuk pipeline machine learning'] },
       { role: 'Full Stack Developer Intern', company: 'Komune Studio Software House', dates: 'Sep 2024 - Jan 2025', responsibilities: ['Merancang dan mengoptimalkan pipeline data untuk aplikasi deteksi wajah dan pengenalan wajah real-time', 'Meningkatkan model yang ada dengan kemampuan pelatihan berkelanjutan serta penambahan dan penghapusan kelas dinamis', 'Membangun backend berbasis Python untuk pencocokan wajah sesuai permintaan melalui input pengguna atau kamera, dengan kualitas data dan performa yang tinggi', 'Menerapkan pengelolaan basis data SQL dan NoSQL untuk menyimpan dan mengambil data wajah yang telah diproses'] },
     ],
-    contact: { languageLabel: 'Pilihan bahasa', mail: 'Email', whatsapp: 'WhatsApp' },
+    contact: { languageLabel: 'Pilihan bahasa', mail: 'Email', whatsapp: 'WhatsApp', github: 'GitHub' },
   },
   zh: {
     navigation: ['关于', '技能', '项目', '经历', '联系'],
     primaryNavigation: '主要导航',
     about: { imageAlt: '郑福盛', name: '郑福盛', subtitle: '软件工程师 | 机器学习与数据科学爱好者', description: '你好，我是郑福盛。目前我在 PWD Lab 担任自由软件工程师，专注于开发网页、数据和人工智能应用。未来我希望成为数据科学家或机器学习工程师。' },
-    skills: { hardTitle: '专业技能', softTitle: '软技能', hard: ['Python', 'HTML', 'CSS', 'JavaScript', 'React', 'Next.js', '数据库', '人工智能与机器学习'], soft: ['领导力', '团队沟通', '成长型思维', '需求分析'] },
+    skills: { hardTitle: '硬技能', softTitle: '软技能', hard: ['Python', 'HTML', 'CSS', 'JavaScript', 'React', 'Next.js', '数据库', '人工智能与机器学习'], soft: ['领导力', '团队沟通', '成长型思维', '需求分析'] },
     projects: { categories: '项目类别', featured: '精选项目', dataMining: '数据挖掘', oop: '面向对象编程', nlp: '自然语言处理', cv: '计算机视觉', classification: '分类与回归', classificationDescription: '完成分类和回归建模任务以处理水质数据集，并将数据提取、转换和加载到 SQL 数据库中。', hotelier: 'Le Hotelier', hotelierDescription: '用于处理酒店运营的 Java 酒店管理软件。', sentiment: '情感分析', sentimentDescription: '一个基于 React.js 的简单网页应用，可对给定文本进行情感分析。', fraud: '欺诈检测器', fraudDescription: '使用 ETL 流程和自然语言处理识别虚假电商评论的 Python 桌面应用。', msdd: 'MSDD', msddDescription: '一个物体检测数据集，包含印度尼西亚迷你市场的 300 张货架图片、近 14,000 个产品实例和超过 100 个带类别标签的 SKU。', realtime: '实时情绪识别', realtimeDescription: '使用 Python、OpenCV 和训练数据集的实时情绪识别流程，可进行摄像头数据采集、处理和分类。', emotion: '情绪识别', emotionDescription: '通过数据预处理、特征提取和监督学习技术开发的基于图像的情绪分类模型。' },
     experience: [
       { role: '软件工程师', company: 'PWD Lab', dates: '2026年7月 - 至今', responsibilities: ['利用 Next.js 和 React 等框架开发各类应用程序，同时结合 Supabase 等数据库及 AI 等技术。'] },
       { role: '数据标注员', company: 'T-Maxx International', dates: '2025年12月 - 2026年1月', responsibilities: ['为机器学习流程标注数据'] },
-      { role: '自由数据标注员', company: 'DataAnnotation', dates: '2025年7月 - 2025年11月', responsibilities: ['为机器学习流程标注数据'] },
+      { role: '自由职业数据标注员', company: 'DataAnnotation', dates: '2025年7月 - 2025年11月', responsibilities: ['为机器学习流程标注数据'] },
       { role: '全栈开发实习生', company: 'Komune Studio Software House', dates: '2024年9月 - 2025年1月', responsibilities: ['为实时人脸检测和人脸识别应用设计并优化数据流程', '为现有模型增加持续训练以及动态添加和删除类别的能力', '构建基于 Python 的后端，通过用户输入或摄像头进行按需人脸匹配，并确保数据质量和性能', '使用 SQL 和 NoSQL 数据库管理来存储和检索处理后的人脸数据'] },
     ],
-    contact: { languageLabel: '语言选择', mail: '电子邮件', whatsapp: 'WhatsApp' },
+    contact: { languageLabel: '语言选择', mail: '电子邮件', whatsapp: 'WhatsApp', github: 'GitHub' },
   },
 };
 

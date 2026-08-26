@@ -14,6 +14,14 @@ export default function ContactSection({ content }) {
 			>
 				{content.whatsapp}
 			</a>
+			<a
+				className="contact-button contact-button-github"
+				href="https://github.com/Tekn-drive"
+				target="_blank"
+				rel="noreferrer"
+			>
+				{content.github}
+			</a>
 		</div>
 	);
 }
