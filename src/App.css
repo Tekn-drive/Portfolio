@@ -188,11 +188,11 @@
 }
 
 .skills-group-hard {
-  animation: reveal-card-left 3s 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: reveal-card-left 700ms 0ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .skills-group-soft {
-  animation: reveal-card-right 3s 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: reveal-card-right 700ms 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .skills-group h2 {
@@ -336,7 +336,8 @@
   position: relative;
   top: -3rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
   gap: 1.25rem;
   width: min(100%, 70rem);
   margin: 0 auto;
@@ -354,7 +355,9 @@
 }
 
 .experience-card:nth-child(4) {
-  grid-column: 2;
+  grid-column: 1 / -1;
+  width: calc(50% - 0.625rem);
+  justify-self: center;
 }
 
 .experience-card-header {
@@ -463,6 +466,40 @@
   }
 }
 
+@media (orientation: portrait) and (max-width: 32rem) {
+  .site-navigation {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .site-navigation button:nth-child(-n + 3) {
+    grid-column: span 2;
+  }
+
+  .site-navigation button:nth-child(4) {
+    grid-column: 2 / 4;
+  }
+
+  .site-navigation button:nth-child(5) {
+    grid-column: 4 / 6;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 32rem) {
+  .content-viewport {
+    padding-top: 0.75rem;
+  }
+
+  .experience-content { top: 0; }
+
+  .skills-group-hard,
+  .skills-group-soft,
+  .project-category-card,
+  .experience-card {
+    animation-name: reveal-card-bottom;
+  }
+
+}
+
 @media (max-width: 44rem) {
   .about-content {
     grid-template-columns: 1fr;
@@ -500,6 +537,7 @@
 
   .experience-card:nth-child(4) {
     grid-column: auto;
+    width: 100%;
   }
 
   .project-card-top,
@@ -515,6 +553,13 @@
 
 }
 
+@media (orientation: portrait) and (max-width: 32rem) {
+  .skills-content,
+  .projects-content {
+    gap: 1.25rem;
+  }
+}
+
 @keyframes reveal-card-left {
   from { opacity: 0; transform: translateX(-2rem); }
   to { opacity: 1; transform: translateX(0); }
@@ -523,6 +568,11 @@
 @keyframes reveal-card-right {
   from { opacity: 0; transform: translateX(2rem); }
   to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes reveal-card-bottom {
+  from { opacity: 0; transform: translateY(2rem); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes reveal-project-card-left {
@@ -560,4 +610,10 @@
   .contact-button-mail,
   .contact-button-whatsapp,
   .contact-button-github { animation: none; }
+}
+
+@media (orientation: landscape) and (min-width: 64rem) and (min-height: 44rem) {
+  body:has(.about-content, .skills-content, .contact-content) {
+    overflow: hidden;
+  }
 }
